@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+html{
+    min-height: 100vh;
+    overflow: hidden;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.section1, .section2{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.section1::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: url("images/Faesa-background-2.png");
+    background-size: cover;
+    z-index: -3px;
+    transform: translateZ(-1.5px) translateY(0%)scale(2.77);
+}
+.title, .subtitle{
+    margin: 0;
+    text-align: center;
+}
+.title{
+    font-size: 10vw;
+}
+.title_text{
+    margin: 0;
+    text-align: center;
+    font-size: 4vw;
+    padding-top: 0%;
+    background-color: #005ea2;
+}
+.subtitle{
+    font-size: 3vw;
+}
+.section1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("images/Faesa-foreground.png");
+    background-size: cover;
+    transform: scale(1);
+}
+.section1 .text{
+    top: 10%;
+    transform: translateZ(0.1px) scale(1);
+    margin: 0;
+    font-size: 2vw;
+}
+.section2{
+    background-color: #fafafa;
+    overflow-y: scroll;
+    padding-right: 0; 
+}
+.look_down{
+    padding-top: 25vh;
+    font-size: 2rem;
+}
+.content_text{
+    text-align: left;
+    font-size: 2rem;
+    padding: 2%;
+    background-color: #00b2ea;
+    border-radius: 15px;
+
+}
+.icon{
+    float: left;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 15px;
+    
+}
+.icon-text{
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #fff;
+    
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5.5%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.content li{
+    padding: 1% 0%;
+}
+.content li a:hover {
+    color: #85e7ff;
+}
+
+.text{
+    text-align: center;
+    top: 30%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15vw;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgba(172, 172, 172, 0.549);
+    height: 6rem;
+    width: 92%;
+    position: sticky;
+    top: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    z-index: +3;
+
+}
+.logo{
+    width: 4rem;
+    object-fit: cover;
+    border-radius: 15%;
+    cursor: pointer;
+}
+#titulo{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    padding: 30px;
+
+}
+.nav__links{
+    list-style: none;
+    padding-inline-start: 0px;
+
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.nav__links li a{
+    
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: #85e7ff;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.active{
+    color: white;
+}
+.cadastro{
+    background-color: #005ea2;
+    padding: 10px;
+    border-radius: 30px;
+}
+.cadastro_fundo{
+    background-color: #005ea2;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    font-size: 3rem;
+}
